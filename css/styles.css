@@ -72,7 +72,7 @@ button {
   line-height: 1.2;
   text-decoration: none;
 }
-.head-list {
+.nav__list {
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
@@ -81,13 +81,28 @@ button {
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
 }
-.head-list {
+.nav__list {
   display: flex;
 }
-.head-list :not(:last-child) {
+.nav__list :not(:last-child) {
   margin-right: 50px;
 }
-.nav-list .link {
+.contacts {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+.contacts {
+  display: flex;
+}
+.contacts :not(:last-child) {
+  margin-right: 50px;
+}
+.nav__item .nav__link {
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
@@ -96,7 +111,7 @@ button {
   letter-spacing: 0.02em;
   color: var(--primiry-text-color);
 }
-.nav-list .link {
+.nav__item .nav__link {
   display: flex;
 }
 .header {
@@ -108,8 +123,8 @@ button {
   display: flex;
   align-items: center;
 }
-.link:hover,
-.link:focus {
+.nav__link:hover,
+.nav__link:focus {
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
