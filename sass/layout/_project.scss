@@ -1,0 +1,116 @@
+.project {
+  padding-bottom: 94px;
+}
+.project-button__list {
+  justify-content: center;
+  display: flex;
+  margin-bottom: 50px;
+}
+.project-button__item {
+  align-items: center;
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
+}
+.project-button__button {
+  background: $button-bg-color;
+  border-radius: 4px;
+  border: 0px;
+  padding: 6px 22px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  &:hover,
+  &:focus {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+    color: $button-bg-color;
+    background-color: $accent-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+.project__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+.project__item {
+  position: relative;
+  flex-basis: calc((100% - 3 * 30px) / 3);
+  margin-left: 30px;
+  margin-top: 30px;
+  width: 370px;
+  height: 404px;
+  box-sizing: content-box;
+  &:focus,
+  &:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+.project-overlay {
+  overflow: hidden;
+  position: relative;
+}
+
+.project-overlay__content {
+  width: 370px;
+  height: 294px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  transform: translatey(0%);
+  background-color: rgba(33, 150, 243, 0.9);
+  .project__item:hover & {
+    transform: translatey(-101%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+.project-overlay__text {
+  width: 322px;
+  height: 168px;
+  margin: 63px 24px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  color: $white-color;
+}
+.project__content {
+  padding: 20px 24px 20px 24px;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  width: 370px;
+}
+.project__text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+  color: $primary-text-color;
+  margin-bottom: 4px;
+}
+.project__description {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  color: $secondary-text-color;
+}

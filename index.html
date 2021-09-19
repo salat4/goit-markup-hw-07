@@ -14,30 +14,30 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
 </head>
 
 <body>
     <header class="header">
-        <div class="container header__container">
+        <div class="header__container container">
             <a class="header__logo logo" href="./index.html">Web<span class="logo__second-word">Studio</span></a>
-            <nav>
-                <!-- class="header__navigation" -->
+            <nav class="header__navigation">
+                
                 <ul class="header-nav">
                     <li class="header-nav__item">
-                        <a class="header-nav__link header-nav__link-current " href="./index.html">Студия</a>
+                        <a class="header-nav__link header-nav__link--current header-nav__link--after" href="./index.html">Студия</a>
                     </li>
                     <li class="header-nav__item">
-                        <a class="header-nav__link " href="./portofolio.html">Портфолио</a>
+                        <a class="header-nav__link header-nav__link--after  " href="./portofolio.html">Портфолио</a>
                     </li>
                     <li class="header-nav__item ">
-                        <a class="header-nav__link " href="/">Контакты</a>
+                        <a class="header-nav__link header-nav__link--after" href="/">Контакты</a>
                     </li>
                 </ul>
             </nav>
             <div class="header-contacts">
                 <ul class="header-contacts__list">
-                    <li>
+                    <li class="header-nav__item">
                         
                         <a class="header-contacts__item" href="mailto:info@devstudio.com">
                             <svg class="header-contacts__icon" width="16" height="12">
@@ -46,7 +46,7 @@
                             info@devstudio.com</a>
                         
                     </li>
-                    <li>
+                    <li class="header-nav__item">
                       
                         <a class="header-contacts__item" href="tel:+380961111111">
                               <svg class="header-contacts__icon" width="10" height="16">
@@ -59,7 +59,7 @@
         </div>
     </header>
     <main>
-        <section class="main">
+        <section class="main section">
             <div class="main__container container">
                 <h1 class="main__title">
                     Эффективные решения для вашего бизнеса
@@ -67,7 +67,7 @@
                 <button data-modal-open class="main__button" > 
                     Заказать услуги
                 </button>
-                <div class="backdrop backdrop__is-hidden" data-modal>
+                <div class="backdrop backdrop__is-hidden is-hidden" data-modal>
                     <div class="backdrop__modal">
 
                    
@@ -85,7 +85,7 @@
                         </label>
                         <div class="backdrop-field">
                             <input class="backdrop-field__input" type="text" name="Имя">
-                            <svg class="backdrop-field__icon" width="12" height="12">
+                            <svg class="backdrop-field__icon--personal" width="12" height="12">
                                 <use href="./images/symbol-defs.svg#icon-personal"></use>
                             </svg>
                         </div>
@@ -94,7 +94,7 @@
                         </label>
                         <div class="backdrop-field">
                             <input class="backdrop-field__input" type="tel" name="тел">
-                            <svg class="backdrop-field__icon" width="13" height="13">
+                            <svg class="backdrop-field__icon--tel" width="13" height="13">
                                 <use href="./images/symbol-defs.svg#icon-tel"></use>
                             </svg>
                         </div>
@@ -103,7 +103,7 @@
                         </label>
                         <div class="backdrop-field">
                             <input class="backdrop-field__input" type="mail" name="mail">
-                            <svg class="backdrop-field__icon" width="15" height="12">
+                            <svg class="backdrop-field__icon--mail" width="15" height="12">
                                 <use href="./images/symbol-defs.svg#icon-envelope-black"></use>
                             </svg>
                         </div>
@@ -115,15 +115,15 @@
                             <input class="backdrop-checkbox__inpute" type="checkbox">
                             <span class="backdrop-checkbox__box">
                             </span>
-                            <p class="backdrop-checkbox__text">Соглашаюсь с рассылкой и принимаю <a href="#" class="agreement-input">Условия договора</a></p> 
+                            <p class="backdrop-checkbox__text">Соглашаюсь с рассылкой и принимаю <a href="#" class="backdrop-checkbox__text--blue">Условия договора</a></p> 
                         </label>
                         <button class="backdrop__button--send"><p class="backdrop__name--send">Отправить</p></button>
                     </form> 
                 </div>
             </div>    
         </section>
-        <section class="features">
-            <div class="features__container">
+        <section class="features section">
+            <div class="features__container container">
                 <ul class="features__list">
                     <li class="features__item">
                         <div class="features-exp">
@@ -141,7 +141,7 @@
                         </p>
                     </li>
                     <li class="features__item">
-                        <div class="exp-item">
+                        <div class="features-exp">
                             <svg class="features-exp__icon" width="70" height="70">
                                 <use href="./images/symbol-defs.svg#icon-clock"></use>
                             </svg>
@@ -154,7 +154,7 @@
                         </p>
                     </li>
                     <li class="features__item">
-                        <div class="exp-item">
+                        <div class="features-exp">
                             <svg class="features-exp__icon" width="70" height="70">
                                 <use href="./images/symbol-defs.svg#icon-diagram"></use>
                             </svg>
@@ -167,7 +167,7 @@
                         </p>
                     </li>
                     <li class="features__item">
-                        <div class="exp-item">
+                        <div class="features-exp">
                             <svg class="features-exp__icon" width="70" height="70">
                                 <use href="./images/symbol-defs.svg#icon-astronaut"></use>
                             </svg>
@@ -182,8 +182,8 @@
                 </ul>
             </div>
         </section>
-        <section class="do__section section">
-            <div class="do__container">
+        <section class="do section">
+            <div class="do__container container">
                 <h2 class="do__title">
                     Чем мы занимаемся
                 </h2>
@@ -213,8 +213,8 @@
                 </ul>
             </div>
         </section>
-        <section class="section team ">
-            <div class="team__container">
+        <section class="team section  ">
+            <div class="team__container container">
                 <h2 class="team__title">Наша Команда</h2>
                 <ul class="team__list">
                     <li class="team__item">
@@ -295,7 +295,7 @@
                         <img src="./images/about/about-img7.jpg" width="270" height="260" alt="Николай Тарасов">
                         <div class="team-box">
                             <h3 class="team-box__name">Николай Тарасов</h3>
-                            <p class="team-box_description">Marketing</p>
+                            <p class="team-box__description">Marketing</p>
                     <ul class="team-box__list">
                         <li class="team-box__item">
                             <a href="" class="team-box__link">
@@ -368,7 +368,7 @@
                 </ul>
             </div>
         </section>
-        <section class="client">
+        <section class="client section">
             <h2 class="client__title">
                 Постоянные клиенты
             </h2>
@@ -419,11 +419,11 @@
 
     </main>
         <footer class="footer">
-            <div class="footer__container footer-all">
+            <div class="footer__container container">
                 <div class="footer-left">
                     <ul class="footer-left__list">
                         <li class="footer-left__item">
-                            <a class="footer-left__logo logo" href="./index.html">Web<span class="logo__second-word">Studio</span></a>
+                            <a class="footer-left__logo logo" href="./index.html">Web<span class="footer-left__second-word">Studio</span></a>
                         </li>
                         <li class="footer-left__item">
                             <address class="footer-left__address">

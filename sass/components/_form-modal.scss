@@ -1,0 +1,241 @@
+.backdrop__modal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 528px;
+  height: 581px;
+  background: $white-color;
+  transform: translate(-50%, -50%);
+  animation-name: changeModalBtn;
+  animation-duration: 2000ms;
+  z-index: 3;
+}
+.backdrop__button--close {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: $white-color;
+  margin-top: 8px;
+  margin-left: 490px;
+  margin-bottom: 2px;
+  cursor: pointer;
+  border-radius: 50%;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.1);
+  border-image: initial;
+}
+.backdrop__icon {
+  fill: #000;
+  &:focus,
+  &:hover {
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    fill: #2196f3;
+  }
+}
+.backdrop__title {
+  width: 448px;
+  height: 23px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $primary-text-color;
+  text-transform: none;
+  margin: auto;
+}
+.backdrop__text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: $secondary-text-color;
+  margin-left: 41px;
+  text-transform: none;
+  width: 25px;
+  height: 14px;
+  margin-top: 12px;
+  position: relative;
+  margin-bottom: 4px;
+}
+.backdrop-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
+}
+.backdrop-field__input {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 448px;
+  height: 40px;
+  padding-left: 38px;
+  padding-right: 39px;
+  margin-left: 41px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: $primary-text-color;
+  &:focus-within {
+    border-color: $accent-color;
+    outline: none;
+  }
+}
+.backdrop-field__icon--personal {
+  fill: #000000;
+  position: absolute;
+  top: 107px;
+  left: 55px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus-within {
+    fill: $accent-color;
+  }
+  .backdrop-field__input:focus-within + & {
+    fill: $accent-color;
+  }
+}
+.backdrop-field__icon--tel {
+  fill: #000000;
+  position: absolute;
+  top: 176px;
+  left: 55px;
+  &:focus-within {
+    fill: $accent-color;
+  }
+  .backdrop-field__input:focus-within + & {
+    fill: $accent-color;
+  }
+}
+.backdrop-field__icon--mail {
+  fill: #000000;
+  position: absolute;
+  left: 55px;
+  top: 246px;
+  &:focus-within {
+    fill: $accent-color;
+  }
+  .backdrop-field__input:focus-within + & {
+    fill: $accent-color;
+  }
+}
+.backdrop-field__text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: $secondary-text-color;
+  margin-left: 41px;
+  text-transform: none;
+  width: 25px;
+  height: 14px;
+  margin-top: 12px;
+  position: relative;
+  margin-bottom: 4px;
+}
+.backdrop-field__placeholder {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 448px;
+  height: 120px;
+  resize: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 23px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: $primary-text-color;
+  padding-left: 17px;
+  padding-top: 12px;
+  &:focus-within {
+    border-color: $accent-color;
+  }
+  &::placeholder {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+    outline: none;
+    border: none;
+  }
+}
+.backdrop-checkbox {
+  display: flex;
+  padding-left: 77px;
+  align-items: center;
+}
+.backdrop-checkbox__inpute {
+  position: absolute;
+  appearance: none;
+}
+.backdrop-checkbox__box {
+  position: absolute;
+  width: 16px;
+  height: 15px;
+  background-image: url(../../images/boxer.svg);
+  margin-left: -21px;
+  background-repeat: no-repeat;
+  .backdrop-checkbox__inpute:checked + & {
+    background-image: url(../../images/check.svg);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.backdrop-checkbox__text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: $secondary-text-color;
+  text-transform: none;
+  &--blue {
+    color: $accent-color;
+    text-decoration: underline;
+  }
+}
+.backdrop__button--send {
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 4px;
+  width: 200px;
+  height: 50px;
+  align-items: center;
+  text-align: center;
+  background: rgb(33, 150, 243);
+  border-radius: 4px;
+  border-width: initial;
+  border-style: none;
+  border-color: initial;
+  border-image: initial;
+}
+.backdrop__name--send {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: $white-color;
+  justify-content: center;
+}

@@ -14,53 +14,54 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
 </head>
 
 <body>
-    <header class="header">
-        <div class="container header__container">
-            <a class="header__logo logo" href="./index.html">Web<span class="logo__second-word">Studio</span></a>
-            <nav>
-                <!-- class="header__navigation" -->
-                <ul class="header-nav">
-                    <li class="header-nav__item">
-                        <a class="header-nav__link header-nav__link-current " href="./index.html">Студия</a>
-                    </li>
-                    <li class="header-nav__item">
-                        <a class="header-nav__link " href="./portofolio.html">Портфолио</a>
-                    </li>
-                    <li class="header-nav__item ">
-                        <a class="header-nav__link " href="/">Контакты</a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="header-contacts">
-                <ul class="header-contacts__list">
-                    <li>
+<header class="header">
+    <div class="header__container container">
+        <a class="header__logo logo" href="./index.html">Web<span class="logo__second-word">Studio</span></a>
+        <nav class="header__navigation">
 
-                        <a class="header-contacts__item" href="mailto:info@devstudio.com">
-                            <svg class="header-contacts__icon" width="16" height="12">
-                                <use href="./images/symbol-defs.svg#icon-envelope"></use>
-                            </svg>
-                            info@devstudio.com</a>
+            <ul class="header-nav">
+                <li class="header-nav__item">
+                    <a class="header-nav__link  header-nav__link--after"
+                        href="./index.html">Студия</a>
+                </li>
+                <li class="header-nav__item">
+                    <a class="header-nav__link header-nav__link--after header-nav__link--current " href="./portofolio.html">Портфолио</a>
+                </li>
+                <li class="header-nav__item ">
+                    <a class="header-nav__link header-nav__link--after" href="/">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header-contacts">
+            <ul class="header-contacts__list">
+                <li class="header-nav__item">
 
-                    </li>
-                    <li>
+                    <a class="header-contacts__item" href="mailto:info@devstudio.com">
+                        <svg class="header-contacts__icon" width="16" height="12">
+                            <use href="./images/symbol-defs.svg#icon-envelope"></use>
+                        </svg>
+                        info@devstudio.com</a>
 
-                        <a class="header-contacts__item" href="tel:+380961111111">
-                            <svg class="header-contacts__icon" width="10" height="16">
-                                <use href="./images/symbol-defs.svg#icon-smartphone"></use>
-                            </svg>
-                            +38 096 111 11 11</a>
-                    </li>
-                </ul>
-            </div>
+                </li>
+                <li class="header-nav__item">
+
+                    <a class="header-contacts__item" href="tel:+380961111111">
+                        <svg class="header-contacts__icon" width="10" height="16">
+                            <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+                        </svg>
+                        +38 096 111 11 11</a>
+                </li>
+            </ul>
         </div>
-    </header>
+    </div>
+</header>
     <main>
         <section class="project section">
-            <div class="project__container">
+            <div class="project__container container">
                 <div class="project-button">
                     <ul class="project-button__list">
                         <li class="project-button__item">
@@ -172,12 +173,12 @@
         </section>
     </main>
     <footer class="footer">
-        <div class="footer__container footer-all">
+        <div class="footer__container container">
             <div class="footer-left">
                 <ul class="footer-left__list">
                     <li class="footer-left__item">
                         <a class="footer-left__logo logo" href="./index.html">Web<span
-                                class="logo__second-word">Studio</span></a>
+                                class="footer-left__second-word">Studio</span></a>
                     </li>
                     <li class="footer-left__item">
                         <address class="footer-left__address">
