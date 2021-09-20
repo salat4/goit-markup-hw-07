@@ -49,7 +49,7 @@
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
-  color: var(--primiry-text-color);
+  color: $primary-text-color;
   &:focus,
   &:hover {
     color: $accent-color;
